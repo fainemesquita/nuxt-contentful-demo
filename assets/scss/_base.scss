@@ -1,0 +1,34 @@
+* {
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: #FFF7C7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FFF7C7; /* Gecko Browsers */
+}
+
+body {
+  box-sizing: border-box;
+  color: var(--text-default);
+  font-size: 1rem;
+  font-family: 'Open Sans', Swap, sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+  font-display: swap;
+}
+
+
+/**In this example, screens smaller than 1000px will be served a system font instead and screens that wide and above will be served the custom font.**/
+
+// @media (min-width: 1000px) { 
+//   body {
+//     font-family: 'FontName', Fallback, sans-serif; 
+//   }
+// }

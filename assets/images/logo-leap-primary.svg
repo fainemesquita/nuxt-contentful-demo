@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="141" height="30" viewBox="0 0 141 30">
+  <g id="logo-leap-primary" transform="translate(-360 -20)">
+    <g id="logo-leap" transform="translate(360 20)">
+      <g id="Group_304" data-name="Group 304">
+        <path id="Path_1018" data-name="Path 1018" d="M130.522,0V29.587H151.9l-2.457-5.918H136.257V0Z" transform="translate(-91.904)" fill="#f69139"/>
+        <path id="Path_1019" data-name="Path 1019" d="M410.2,17.75h-8.605l-.1,11.838h-5.736V0h14.341C421.885,0,422.03,17.75,410.2,17.75Zm-8.605-5.894,8.605-.025a2.964,2.964,0,1,0-.1-5.914H401.58Z" transform="translate(-278.659)" fill="#f69139"/>
+        <path id="Path_1020" data-name="Path 1020" d="M229.578,5.916V0H206.806V29.587h22.772V23.669H212.5V17.75h11.39V11.83H212.5V5.916Z" transform="translate(-145.617)" fill="#f69139"/>
+        <rect id="Rectangle_561" data-name="Rectangle 561" width="29" height="29" transform="translate(0 0.47)" fill="#1e365e"/>
+        <path id="Path_1021" data-name="Path 1021" d="M42.656,26.789l9.654,1.437,1.521,8.1,1.413-11.707L45.085,20Z" transform="translate(-30.035 -14.08)" fill="#f69139"/>
+        <path id="Path_1022" data-name="Path 1022" d="M20.136,42.955,19.4,45.018l-8.726,8.915,11.844-5.5,2.047-3.9Z" transform="translate(-7.516 -30.246)" fill="#f69139"/>
+        <path id="Path_1023" data-name="Path 1023" d="M312.353,29.587H318.6L306.351,0h-6.307L287.791,29.587h6.251l2.45-5.918H309.9ZM298.945,17.75,303.2,7.481,307.45,17.75Z" transform="translate(-202.641)" fill="#f69139"/>
+      </g>
+    </g>
+    <rect id="Rectangle_1575" data-name="Rectangle 1575" width="141" height="30" transform="translate(360 20)" fill="none"/>
+  </g>
+</svg>

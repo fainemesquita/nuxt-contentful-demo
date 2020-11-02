@@ -1,0 +1,158 @@
+body {
+    color: var(--text-default);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing : 0.4px;
+    line-height: 28px;
+}
+  
+blockquote,
+dl,
+ol,
+pre,
+ul {
+    color: var(--text-default);
+}
+
+a {
+    color: inherit;
+    transition: color .1s;
+    text-decoration: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.4;
+    font-weight: 400;
+    color: var(--leap-primary);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: var(--text-h1);
+    letter-spacing: -.5px;
+    @media ($max-lg){
+        font-size: 1.375rem;
+    }
+}
+
+h2 {
+    font-size: var(--text-h1);
+    letter-spacing: -.2px;
+    @media ($max-lg){
+        font-size: 1.375rem;
+        line-height: 1.6;
+    }
+}
+
+h3 {
+    font-size: var(--text-h3);
+    letter-spacing: -.2px;
+    &.font-weight-600{
+        letter-spacing: -.5px;
+    }
+    @media ($max-lg){
+        font-size: 1.25rem;
+    }
+
+}
+
+h4, .h4 {
+    font-size: var(--text-h4);
+    letter-spacing: -.2px;
+    @media ($max-lg){
+        font-size: 1.25rem;
+    }
+}
+
+h5 {
+    font-size: var(--text-h5) !important;
+    letter-spacing: -0.2px;
+    @media ($max-lg){
+        font-size: 1rem;
+    }
+}
+
+p {
+    margin-bottom: 1rem;
+    letter-spacing: -0.02px;
+    line-height: 1.5rem;
+    font-size: var(--text-sm);
+    color: var(--text-default-lighter);
+    @media ($max-lg){
+        font-size: var(--text-sm);
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-primary {
+    color: var(--leap-primary);
+}
+
+.text-white {
+    color: var(--leap-white);
+}
+
+.text-navy {
+    color: var(--leap-primary-darker);
+}
+
+.text-dark {
+    color: var(--text-default);
+}
+
+.text-lighter {
+    color: var(--text-default-lighter);
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-small{
+    font-size: var(--text-sm);
+}
+
+.italic{
+   font-style: italic; 
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed var(--border-color);
+    margin: var(--spacer-md) 0;
+}
+
+
+//FONT WEIGHT
+//Example: .font-weight-100
+
+$font-max: 900;
+$offset: 100;
+@mixin font-weight-loop($className, $styleName) {
+  $i: 0;
+  @while $i <= $font-max {
+    #{$className + $i} { 
+      #{$styleName}: #{$i};
+    }
+    $i: $i + $offset;
+  }
+}
+@include font-weight-loop('.font-weight-', 'font-weight');

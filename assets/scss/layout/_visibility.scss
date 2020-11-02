@@ -1,0 +1,76 @@
+// // Visibility
+
+// @mixin invisible($visibility) {
+//     visibility: $visibility !important;
+//   }
+  
+// //
+// // Visibility utilities
+// //
+
+// .visible {
+//     @include invisible(visible);
+//   }
+  
+//   .invisible {
+//     @include invisible(hidden);
+//   }
+  
+.display {
+    display: none;
+  
+   @media($max-sm) {
+      &-sm {
+        display: none;
+      }
+    }
+  
+   @media($max-md) {
+      &-md {
+        display: none;
+      }
+    }
+  
+   @media($max-lg) {
+      &-lg {
+        display: none;
+      }
+    }
+  
+   @media($max-xl) {
+      &-xl {
+        display: none;
+      }
+    }
+  
+  }
+  
+  .display-none {
+    display: block;
+  
+    @media($from-sm) {
+      &-sm {
+        display: none;
+      }
+    }
+  
+    @media($from-md) {
+      &-md {
+        display: none;
+      }
+    }
+  
+    @media($from-lg) {
+      &-lg {
+        display: none;
+      }
+    }
+  
+    @media($from-xl) {
+      &-xl {
+        display: none;
+      }
+    }
+  
+  
+  }

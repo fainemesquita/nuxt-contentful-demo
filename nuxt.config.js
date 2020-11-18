@@ -53,7 +53,9 @@ module.exports = {
   */
   plugins: [
     '~/plugins/vue-lazysizes.client.js',
-    '~/plugins/vue-gtag'
+    '~/plugins/vue-gtag',
+    "~/plugins/contentful",
+    "~/plugins/posts"
   ],
 
     /*
@@ -140,7 +142,10 @@ module.exports = {
         routes: () => {
             const client = contentful.createClient({
                 space:  process.env.CTF_SPACE_ID,
-                accessToken: process.env.CTF_CDA_ACCESS_TOKEN
+                accessToken: process.env.CTF_CDA_ACCESS_TOKEN,
+                CONTENTFUL_SPACE: process.env.CONTENTFUL_SPACE,
+                CONTENTFUL_ACCESSTOKEN: process.env.CONTENTFUL_ACCESSTOKEN,
+                CONTENTFUL_ENVIRONMENT: process.env.CONTENTFUL_ENVIRONMENT
             });
 
             return client.getEntries({
@@ -157,3 +162,20 @@ module.exports = {
     fallback: '404.html'
     }
 }
+
+// generate: {
+//     routes() {
+//       return Promise.all([
+//         client.getEntries({
+//           content_type: "blogPost"
+//         })
+//       ]).then(([blogEntries]) => {
+//         return [...blogEntries.items.map(entry => entry.fields.slug)];
+//       });
+//     }
+//    }
+
+// routes: [
+//     '/faine-post',
+//     '/automate-with-webhooks'
+//   ],
